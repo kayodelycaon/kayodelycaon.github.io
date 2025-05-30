@@ -26,9 +26,16 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minima
+theme: minima
 plugins:
   - jekyll-feed
+include:
+ - _root
+ - _pages
+collections:
+  books:
+    output: true
+    sort_by: published_at
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
