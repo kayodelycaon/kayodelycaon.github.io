@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Researching Edo Period Japan
-date:  2013-08-25 18:45:00 -0400
+date:  2013-08-15 18:45:00 -0400
 categories: research
 ---
 I’ve been working on a fantasy story set in Japan in the 1700s, known as Edo Period Japan. There’s a lot of stuff on the internet about that era but most of it is depressingly topical. You don’t get a lot of feel for the culture.

@@ -23,15 +23,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
+header_pages:
+  - index.md
+  - about.md
+  - pages/ref.md
+permalink: :year/:title
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
-include:
- - _root
- - _pages
 collections:
   books:
     output: true
@@ -48,3 +49,4 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+#   - Rakefile

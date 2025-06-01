@@ -4,15 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Author Bio
+<img src="/images/avatar-transparent-512.png" height="256" width="256" style="float: left"/>
+Kayode Lycaon (Kay·o·dee Lie·kay·on) is a gregarious painted wolf living in the questionable habitat of southwestern Ohio. By day, he pretends to be a human, writing software. At night, his paws weave stories from threads spun from the fertile grounds of his imagination.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+He writes stories filled with hope and hardship. The ending may be joyful, bittersweet, or tragic but it will always bring the rich inner lives of his anthropomorphic characters to life on the page. He hopes that his passion and creativity will inspire others to tell their own stories.
