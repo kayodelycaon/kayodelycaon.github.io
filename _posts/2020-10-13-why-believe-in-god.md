@@ -1,16 +1,12 @@
 ---
 layout: post
 title: Why I Believe in God
-date: 2013-10-14 18:49:00 -0400
+date: 2013-10-14 18:49
 categories: autobiographical
 ---
 This story starts with my childhood. From the outside, I had great parents and a difficult time at school due to ADHD. Frankly, it was hell. From the start of school until fifth grade, I was subject to the continuous emotional abuse and gaslighting of teachers and school “counselors”. But it didn’t end at school. My emotional problems caused a lot of acting out at home, which I was punished for.
 
-*Note, I didn’t know I bipolar until I was 34. More on that journey in my [Living With Psychosis]({% link _posts/2020-10-03-living-with-psychosis.md %}) post.*
-
-This story starts with my childhood. From the outside, I had great parents and a difficult time at school due to ADHD. Frankly, it was hell. From the start of school until fifth grade, I was subject to the continuous emotional abuse and gaslighting of teachers and school “counselors”. But it didn’t end at school. My emotional problems caused a lot of acting out at home, which I was punished for.
-
-Note, I didn’t know I bipolar until I was 34. More on that journey in my Living With Psychosis post.er
+<p class="author">Note, I didn’t know I bipolar until I was 34. More on that journey in my [Living With Psychosis]({% link _posts/2020-10-03-living-with-psychosis.md %}) post.</p>
 
 I was suicidal by fourth grade and by the time I was 18, I was carrying a lot of hate in my heart. I knew this was wrong but I didn’t see a way forward. So, when I had the chance, I went on a 3-day spiritual retreat with my dad and a number of other men from my parent’s church. Even if I didn’t get anything out of it, it would be a welcome break from stress at home.
 
