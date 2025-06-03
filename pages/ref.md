@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Reference Sheets
 permalink: /ref/
 ---

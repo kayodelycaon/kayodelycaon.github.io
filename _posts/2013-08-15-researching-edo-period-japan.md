@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Researching Edo Period Japan
 date:  2013-08-15 18:45
 categories: research

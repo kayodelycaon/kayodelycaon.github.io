@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Living With Psychosis
 date:  2020-10-03 14:53
 categories: autobiographical

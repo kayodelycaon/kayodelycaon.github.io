@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Why I Believe in God
 date: 2013-10-14 18:49
 categories: autobiographical

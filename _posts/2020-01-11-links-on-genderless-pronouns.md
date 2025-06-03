@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Links on Genderless, Non-Binary Pronouns and Honorifics
 date:  2020-01-11 11:46
 categories: research

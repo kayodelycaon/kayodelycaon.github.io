@@ -1,5 +1,4 @@
 ---
-layout: post
 title: What does it mean to be furry?
 date: 2014-08-09
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A New Start
 date: 2019-11-19
 categories: autobiographical

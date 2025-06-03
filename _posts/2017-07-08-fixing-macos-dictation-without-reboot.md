@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Fixing macOS Dictation Without Reboot
 date: 2017-07-08
 categories: software

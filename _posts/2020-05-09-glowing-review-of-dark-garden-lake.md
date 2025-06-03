@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Glowing Review of Dark Garden Lake!
 date:  2020-05-09
 categories: stories
