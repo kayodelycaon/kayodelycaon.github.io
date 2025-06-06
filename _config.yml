@@ -59,3 +59,4 @@ exclude:
   - vendor/ruby/
   - Rakefile
   - "**/_template.md"
+  - "*.pxd"
