@@ -1,0 +1,10 @@
+- title: Home
+  page: index.md
+- title: Books
+  page: pages/books.html
+# - title: Stories
+#   page: pages/stories.md
+- title: About
+  page: about.md
+- title: Ref Sheet
+  page: pages/ref.md

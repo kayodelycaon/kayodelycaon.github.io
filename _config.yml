@@ -2,18 +2,14 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 title: Kayodé's Test Site
+subtitle: "Painted Wolf, Furry Writer, and Software Developer"
 email: kayode@kayode.co
 description: >-
   Articles, stories, and books by Kayodé Lycaon, furry author and software developer.
 permalink: :year/:title
 date_format: "%b %-d, %Y" # e.g. "Jan 1, 2020"
+timezone: "America/New_York"
 
-header_pages:
-  - index.md
-  - pages/books.md
-  - pages/stories.md
-  - about.md
-  - pages/ref.md
 collections:
   books:
     output: false
@@ -25,6 +21,7 @@ collections:
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-default-layout
 liquid:
   strict_filters: true
 
@@ -32,17 +29,23 @@ defaults:
   - scope:
       path: ""
     values:
-      author: kayode_lycaon
+      author: kayodelycaon
+      layout: default
   - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "page"
+      layout: page
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
+  - scope:
+      path: ""
+      type: redirects
+    values:
+      layout: redirect
   # - scope:
   #     path: ""
   #     type: "books"
@@ -60,3 +63,4 @@ exclude:
   - Rakefile
   - "**/_template.md"
   - "*.pxd"
+  - images/social-media/originals/

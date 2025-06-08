@@ -1,21 +1,16 @@
 ---
-layout: default
 title: Books
 permalink: /books/
 ---
-<div class="home">
-  <h1 class="page-heading">Books</h1>
+{%- for book in site.books -%}
+  <div class="book" style="clear: both">
+    <img src="{{ book.cover }}" style="float: left; width: 25%"/>
+    <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ book.title | escape }}
+      </a>
+    </h3>
 
-  {%- for book in site.books -%}
-    <div class="book" style="clear: both">
-      <img src="{{ book.cover }}" style="float: left; width: 25%"/>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ book.title | escape }}
-        </a>
-      </h3>
-
-      {{ book.content }}
-    </div>
-  {%- endfor -%}
-</div>
+    {{ book.content }}
+  </div>
+{%- endfor -%}

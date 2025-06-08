@@ -1,10 +1,13 @@
 <header class="site-header" role="banner">
-  <a class="site-title" rel="author" href="/">{{ site.title | escape }}</a>
+  <div class="site-title">
+    <h1><a rel="author" href="/">{{ site.title | escape }}</a></h1>
+    <h2>{{ site.subtitle | escape }}</h2>
+  </div>
+  <img class="site-banner" src="/images/header.jpg"/>
   <nav class="site-nav">
-    <a class="page-link" href="/">Home</a>
-    {%- for path in site.header_pages -%}
-      {%- assign target = site.pages | where: "path", path | first -%}
-      <a class="page-link" href="{{ target.url | relative_url }}">{{ target.title | escape }}</a>
+    {%- for path in site.data.navigation -%}
+      {%- assign target = site.pages | where: "path", path.page | first -%}
+      <a class="page-link" href="{{ target.url | relative_url }}">{{ path.title | escape }}</a>
     {%- endfor -%}
   </nav>
 </header>
