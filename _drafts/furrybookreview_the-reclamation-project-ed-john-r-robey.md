@@ -1,7 +1,6 @@
 ---
-layout: page
 title: The Reclamation Project, ed. John R. Robey
-date: 2020-04-19 00:00
+date: 2020-04-19
 # This is a backup if furrybookreview.com goes away.
 ---
 

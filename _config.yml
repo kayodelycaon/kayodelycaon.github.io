@@ -64,3 +64,4 @@ exclude:
   - "**/_template.md"
   - "*.pxd"
   - images/social-media/originals/
+  - _notes/

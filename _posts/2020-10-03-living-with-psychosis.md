@@ -17,7 +17,7 @@ During my first two jobs, I thought job interviews were routinely recorded with 
 
 Things continued fine for a few years, until I ended up under a great deal of stress. My first psychotic break happened. At the time, my boss and I had already been butting heads. I still managed to keep a lid on the paranoia long enough to get fired for calling my boss an idiot in an email instead of being obviously crazy. Fortunately, the relief from being fired reduced the stress enough to allow me to regain control.
 
-*Why didn’t I quit? My dad had told me many times to never quit a job before you had a better one lined up. Advice I’d since decided to stop listening to.*
+<p class="author">Why didn’t I quit? My dad had told me many times to never quit a job before you had a better one lined up. Advice I’d since decided to stop listening to.</p>
 
 After that job, I moved to Ohio and discovered the Furry fandom. It wasn’t long before I found myself on staff at the local convention. Over several years, I took on more and more responsibility. By the time I was 30, I was on the board of directors and throwing my heart into what effectively became a second full time job.
 
@@ -45,4 +45,4 @@ Deliberately, I sifted through the pieces of my shattered mind and pulled out my
 
 Today, at 34, I’m at the start of a new journey. My old self has died and in it’s ashes, I’ve become Kayodé Lycaon. Hopefully a much better person that I used to be.
 
-*As a side note… I probably should have chosen a phoenix as my “fursona” but I’d rather not go through with that again. Instead, I choose a painted wolf (aka African wild dog) to be my guide into my new, better life. They are the most selfless of canids, taking care for everyone, and at the same time, the best hunters of all mammal species. A fitting mix for who I’ve become. My kindness is defended with sharp eyes and savage teeth.*
+<p class="author">As a side note… I probably should have chosen a phoenix as my “fursona” but I’d rather not go through with that again. Instead, I choose a painted wolf (aka African wild dog) to be my guide into my new, better life. They are the most selfless of canids, taking care for everyone, and at the same time, the best hunters of all mammal species. A fitting mix for who I’ve become. My kindness is defended with sharp eyes and savage teeth.</p>

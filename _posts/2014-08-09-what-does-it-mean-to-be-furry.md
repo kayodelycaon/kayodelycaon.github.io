@@ -2,7 +2,6 @@
 title: What does it mean to be furry?
 date: 2014-08-09
 ---
-
 # What got you into it?
 
 I attended a furry convention in October 2013 out of curiosity. I had seen the CSI episode on furries but I’d been interested in furry artwork since I’d discovered the internet some ten years earlier.
@@ -18,3 +17,5 @@ I remember being six and feeling a “spiritual” connection with wolves. This 
 This feeling deeply inspires my writing. However, this isn’t something that consumes my life. There is a stark separation between this ideal and reality.
 
 When I go to a convention put on a costume, I am still firmly in reality. All I am doing is hiding myself behind a character so I can connect with others in a way I can’t connect with them in person. My costume is far more attractive and interesting than I am. While I play that character, it brings joy and happiness to myself and others around me. It is the most real thing I do. It is the feeling of being right, belonging, and sharing a deep connection.
+
+<p class="author">I wrote this eleven years ago and still holds up.</p>

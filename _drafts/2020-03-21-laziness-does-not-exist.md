@@ -1,5 +1,8 @@
-Laziness Does Not Exist
-Posted on Sat, 21 Mar 2020 by Kayode Lycaon
+---
+title: Laziness Does Not Exist
+date: 2020-03-21
+# I want to expand this at some point. I was experimenting with link posts
+---
 https://medium.com/@devonprice/laziness-does-not-exist-3af27e312d01
 
 Psychological research is clear: when people procrastinate, there’s usually a good reason.

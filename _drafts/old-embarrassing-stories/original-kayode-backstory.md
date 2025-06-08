@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Original Kayode Backstory
 date: 2019-09-16
+# Not sure what to do about this one.
 ---
 <p class="author">This was my original backstory prior to my fursona being a sailing master.</p>
 
