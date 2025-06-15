@@ -1,6 +1,8 @@
 ---
 title: A Lazy Monday
 date: 2020-11-10
+series: Conor and Donovan
+series_order: 3
 where_to_find:
   - name: SoFurry
     url: https://www.sofurry.com/view/1696918

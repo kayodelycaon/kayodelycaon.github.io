@@ -1,12 +1,12 @@
-- title: Blue Sky
-  icon: /images/social-media/bluesky.png
-  url: https://bsky.app/profile/kayodelycaon.bsky.social
 - title: Telegram
   icon: /images/social-media/telegram.png
   url: https://t.me/kayodelycaon
 - title: SoFurry
-  icon: /images/social-media/sofurry.png
+  icon: /images/social-media/sofurry-solid.png
   url: https://kayodelycaon.sofurry.com
 - title: Fur Affinity
   icon: /images/social-media/furaffinity.png
   url: https://www.furaffinity.net/user/kayodelycaon
+- title: Blue Sky
+  icon: /images/social-media/bluesky.png
+  url: https://bsky.app/profile/kayodelycaon.bsky.social

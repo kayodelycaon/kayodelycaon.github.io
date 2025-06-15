@@ -1,10 +1,17 @@
 - title: Home
-  page: index.md
+  page: index.html
+  id: home
+- title: Blog
+  page: pages/blog.html
+  id: blog
 - title: Books
   page: pages/books.html
-# - title: Stories
-#   page: pages/stories.md
+  id: books
+- title: Stories
+  page: pages/stories.md
 - title: About
-  page: about.md
-- title: Ref Sheet
-  page: pages/ref.md
+  page: pages/about.md
+  id: about
+# - title: Styling
+#   page: pages/styling.md
+#   id: styling

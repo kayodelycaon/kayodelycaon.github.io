@@ -1,6 +1,8 @@
 ---
 title: Date Night
 date: 2020-08-12
+series: Conor and Donovan
+series_order: 2
 where_to_find:
   - name: SoFurry
     url: https://www.sofurry.com/view/2257760

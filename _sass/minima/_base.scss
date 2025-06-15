@@ -1,16 +1,3 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
-}
-
-/**
- * Basic styling
- */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
@@ -24,11 +11,39 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+body > main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: $spacing-unit;
+  overflow: auto;
+  @include media-phone {
+    padding: $spacing-unit / 3;
+  }
+}
+
+body > main > article {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+body > main {
+  & > .content {}
+  & > aside {}
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -36,40 +51,54 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-/**
- * `main` element
- */
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
-}
-
-/**
- * Images
- */
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-/**
- * Figures
- */
-figure > img {
-  display: block;
-  border: 1px solid $grey-color-light;
-  padding: 6px;
+figure {
+  margin-bottom: 1em;
+  & > img {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid $grey-color-light;
+    padding: 6px;
+  }
+  figcaption {
+    color: $grey-color-dark;
+    font-size: $tiny-font-size;
+    padding: 0.5em 1em 0;
+
+    &:before{
+      content: '\2014';
+      font-style: normal;
+      margin-right: 1em;
+    }
+  }
 }
 
-figcaption {
-  color: $grey-color-dark;
-  font-size: $tiny-font-size;
-  padding: 5px $spacing-unit/3;
-  &:before{
-    content: '\2014';
-    font-size: 14px;
-    font-style: normal;
-    margin-right: $spacing-unit/2;
-  }
+h1 {
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
+h3{
+  font-size: 1.6em;
+}
+
+h4{
+  font-size: 1.4em;
+}
+
+h5{
+  font-size: 1.2em;
+}
+
+h6{
+  font-size: 1em;
 }
 
 /**
@@ -99,10 +128,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: underline;
-
-  &:visited {
-    color: darken($brand-color, 20%);
-  }
 }
 
 /**
@@ -153,35 +178,6 @@ pre {
 }
 
 /**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/**
  * Icons
  */
 
@@ -194,19 +190,13 @@ pre {
     vertical-align: text-top;
 }
 
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
-}
-
 /**
  * Tables
  */
 table {
   margin-bottom: $spacing-unit;
   width: 100%;
-  text-align: $table-text-align;
+  text-align: left;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
   border: 1px solid $grey-color-light;

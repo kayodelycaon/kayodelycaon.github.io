@@ -2,6 +2,8 @@
 title: Links on Genderless, Non-Binary Pronouns and Honorifics
 date:  2020-01-11 11:46
 categories: research
+excerpt: >-
+  By far the most common method is to use singular they and skip any gendered honorifics. If anyone thinks singular they is a grammatical error, I invite them to read the linked wikipedia page and learn otherwise.
 ---
 <p class="author">Please note that this article is not a guide. It is a starting point to help you with your own consideration of the topic. If you have improvements to suggestion, please DM me on twitter or telegram. I’d love to include them.</p>
 

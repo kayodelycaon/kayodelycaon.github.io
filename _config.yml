@@ -1,12 +1,12 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Kayodé's Test Site
+title: Kayodé Lycaon
 subtitle: "Painted Wolf, Furry Writer, and Software Developer"
 email: kayode@kayode.co
 description: >-
   Articles, stories, and books by Kayodé Lycaon, furry author and software developer.
-permalink: :year/:title
+permalink: blog/:year/:title
 date_format: "%b %-d, %Y" # e.g. "Jan 1, 2020"
 timezone: "America/New_York"
 
@@ -21,7 +21,7 @@ collections:
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-default-layout
+  # - jekyll-paginate
 liquid:
   strict_filters: true
 
@@ -41,6 +41,7 @@ defaults:
       type: posts
     values:
       layout: post
+      nav_id: blog
   - scope:
       path: ""
       type: redirects

@@ -2,6 +2,8 @@
 title: Living With Psychosis
 date:  2020-10-03 14:53
 categories: autobiographical
+excerpt: >-
+  Someone asked me how psychosis can feel “normal”. It’s not an easy thing to explain but this my best attempt. As horrifying as my story may sound, I don’t see it that way. For me, this is just a fascinating story about the amazing power of the human mind.
 ---
 <p class="author">Someone asked me how psychosis can feel “normal”. It’s not an easy thing to explain but this my best attempt. As horrifying as my story may sound, I don’t see it that way. For me, this is just a fascinating story about the amazing power of the human mind.</p>
 

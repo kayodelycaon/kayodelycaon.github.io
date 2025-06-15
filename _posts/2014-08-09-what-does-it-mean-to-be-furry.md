@@ -1,6 +1,8 @@
 ---
 title: What does it mean to be furry?
 date: 2014-08-09
+excerpt: >-
+  I attended a furry convention in October 2013 out of curiosity. I had seen the CSI episode on furries but I’d been interested in furry artwork since I’d discovered the internet some ten years earlier.
 ---
 # What got you into it?
 

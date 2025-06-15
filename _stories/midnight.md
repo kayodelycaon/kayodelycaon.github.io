@@ -1,6 +1,8 @@
 ---
 title: Midnight
 date: 2021-04-24
+series: Conor and Donovan
+series_order: 1
 where_to_find:
   - name: SoFurry
     url: https://www.sofurry.com/view/2257763

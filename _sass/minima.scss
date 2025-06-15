@@ -30,35 +30,30 @@ $small-font-size:  16px !default;
 $tiny-font-size:  14px !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$content-width:    68.9%!default;
+$spacing-unit:     1.7em !default;
 
-$site-title-color: #d5ae7c !default;
+$brand-color-light: #d5ae7c !default;
 $text-color:       #000 !default;
 $background-color: #fcf1ee !default;
 $brand-color:      #836330 !default;
 $header-color:     #000 !default;
 
-$grey-color:       #a1768a !default;
+$grey-color:       #a1796a !default;
 $grey-color-dark:  #666 !default;
 $grey-color-light: #ddd !default;
 
-$table-text-align: left !default;
-
-// Width of the content area
-$content-width:    800px !default;
-
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$phone-width: 600px !default;
 
 // Use media queries like this:
-// @include media-query($on-palm) {
+// @include media-phone {
 //   .wrapper {
 //     padding-right: $spacing-unit / 2;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
+@mixin media-phone {
+  @media screen and (max-width: $phone-width) {
     @content;
   }
 }

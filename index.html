@@ -1,0 +1,52 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+nav_id: home
+---
+<div class="home-header">
+  <p><img src="/images/avatar-transparent-512.png" height="150" width="150" style="float: left"/>
+  Kayode Lycaon (Kay·o·dee Lie·kay·on) is a gregarious painted wolf living in the questionable habitat of southwestern Ohio. By day, he pretends to be a human, writing software. At night, his paws weave stories from threads spun from the fertile grounds of his imagination.
+  <a href="{%- link pages/about.md -%}" class="arrow">Full Bio</a>
+  <a href="{%- link pages/ref.md -%}" class="arrow">Ref Sheet</a>
+  </p>
+</div>
+<div class="home-section social-media" class="arrow">
+  <h2>Social Media</h2>
+  <p>
+  Kayodé can also be found on
+  {% for social in site.data.social_media -%}
+  <span class="social-media-link"><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.title }}</a></span>
+  {%- endfor -%}
+  </p>
+</div>
+<div class="home-section">
+  <h2>Books</h2>
+  <div class="book-list">
+    {%- for book in site.books -%}
+      <div class="book-entry">
+        <a class="post-link" href="{{ book.url | relative_url }}">
+          <img src="{{ book.cover }}" alt="{{ book.title | escape }}" />
+        </a>
+      </div>
+    {%- endfor  -%}
+  </div>
+</div>
+<div class="home-section">
+  <h2>Featured Stories</h2>
+  <div class="featured-stories">
+    {%- for story_title in site.data.featured_stories -%}
+      <div class="featured-story">
+        {%- assign story = site.stories | where: "title", story_title | first -%}
+        <h3><a href="{{ story.url }}">{{ story.title | escape }}</a></h3>
+        <p>{{ story.content }}</p>
+        <ul class="story-links">
+          {%- for link in story.where_to_find -%}
+            <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="arrow">{{ link.name }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
