@@ -1,0 +1,31 @@
+.books-list {
+  .book {
+    display: grid;
+    grid-template-columns: 8em 1fr;
+    gap: $spacing-unit;
+    .book-cover {
+      padding-top: 0.3em;
+    }
+    .book-details {
+      .book-title {
+        margin-bottom: 0.4em;
+      }
+      h3 {
+        margin: 0;
+      }
+      h4 {
+        margin: 0;
+        font-size: 1.1em;
+      }
+    }
+    .book-description p:last-of-type {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      padding-bottom: $spacing-unit;
+      margin-bottom: $spacing-unit;
+      border-bottom: 1px solid $brand-color;
+    }
+
+  }
+}

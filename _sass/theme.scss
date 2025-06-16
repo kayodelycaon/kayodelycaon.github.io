@@ -68,13 +68,17 @@ $tablet-width: 900px !default;
   font-size: $base-font-size * $ratio;
 }
 
-@import 'fontawesome/fontawesome';
-@import 'fontawesome/solid';
-@import 'fontawesome/brands';
+@import
+  'fontawesome/fontawesome',
+  'fontawesome/solid',
+  'fontawesome/brands';
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+  "includes/base",
+  "includes/layout",
+  "includes/syntax-highlighting",
+  'site/header.scss',
+  'site/footer.scss',
+  'pages/home',
+  'pages/books';

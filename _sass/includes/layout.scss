@@ -1,0 +1,114 @@
+@import 'site/header.scss';
+@import 'site/footer.scss';
+@import 'pages/home';
+@import 'pages/books';
+
+ul.where-to-find {
+  font-size: $small-font-size;
+  list-style: none;
+  margin-left: 0;
+}
+ul.where-to-find li i {
+  width: 1.5em;
+  li a {
+    white-space: nowrap;
+  }
+  @include fa-icon-regular($fa-var-link);
+  &.website {
+    @include fa-icon-solid($fa-var-globe);
+  }
+  &.audio {
+    @include fa-icon-solid($fa-var-headphones);
+  }
+  &.book {
+    @include fa-icon-solid($fa-var-book);
+  }
+  &.ebook {
+    @include fa-icon-solid($fa-var-tablet-screen-button);
+  }
+  &.review {
+    @include fa-icon-solid($fa-var-star);
+  }
+}
+
+/**
+ * Content
+ */
+.post-header {
+  margin-bottom: $spacing-unit / 2;
+}
+
+.post-title {
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.3em;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+  h3 {
+    margin-bottom: 0.3em;
+  }
+}
+
+.post-link {
+  display: block;
+  font-weight: bold;
+}
+
+.post-list-heading {
+  font-weight: bold;
+}
+
+.post-list-container {
+  max-width:  $content-width;
+  margin: 0 auto;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+    h3{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.rss-subscribe {
+  font-size: $small-font-size;
+  color: $grey-color;
+  float: right;
+  a {
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &.adult:after {
+    content: "[18+]";
+    color: $brand-color;
+    font-size: 0.6em;
+    vertical-align: super;
+  }
+}
+
+p.author {
+  font-size: $small-font-size;
+  font-style: italic;
+  color: $brand-color
+}
+
+a.arrow:after{
+  display: inline-block;
+  margin-left: 0.1em;
+  content: " \2192";
+  text-decoration: none;
+}

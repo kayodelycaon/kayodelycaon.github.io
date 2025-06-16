@@ -1,0 +1,72 @@
+.site-header {
+  box-shadow: 0 0 1px 2px $header-color, 0 2px 4px 2px $brand-color-light;
+  width: 100%;
+  color: $brand-color-light;
+  background-color: $header-color;
+  a {
+    color: $brand-color-light;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .site-title {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+    padding: $spacing-unit 1.6%;
+    h1{
+      margin: 0 210px 0 0;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 36px;
+    }
+    h2{
+      margin: 0;
+      color: $grey-color;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .social-media {
+      list-style: none;
+      float: right;
+      margin: 3px 0 0;
+      max-width: 210px;
+      height: 30px;
+
+      li {
+        display: inline-block;
+        margin-right: 18px;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .site-banner {
+    width: 100%;
+  }
+
+  nav.site-nav {
+    text-align: center;
+    a.site-nav-link {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-bottom: 0;
+      font-size: 16px;
+      &.active {
+        font-weight: bold;
+      }
+      &:hover {
+        color: #000;
+        background-color: $brand-color-light;
+      }
+    }
+  }
+}
