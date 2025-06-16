@@ -1,6 +1,7 @@
 ---
 title: Midnight
 date: 2021-04-24
+adult: true
 series: Conor and Donovan
 series_order: 1
 where_to_find:

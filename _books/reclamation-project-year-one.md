@@ -8,7 +8,7 @@ story: Dark Garden Lake
 where_to_find:
   - name:  FurPlanet
     url: https://furplanet.com/shop/item.aspx?itemid=1081
-    type: paperbook
+    type: book
   - name: BadDogBooks
     url: https://baddogbooks.com/product/reclamation-project-year-one/
     type: ebook

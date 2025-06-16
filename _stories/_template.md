@@ -7,7 +7,7 @@ anthology:
   where_to_find:
     - name:
       url:
-      type: paperbook
+      type: book
     - name:
       url:
       type: ebook

@@ -8,7 +8,7 @@ story: A Perfectly Normal Day
 where_to_find:
   - name:  Furry Historical Fiction Society
     url: https://fhfs.ink/when-the-world-was-young/
-    type: paperbook
+    type: book
   - name: Furry Historical Fiction Society
     url: https://fhfs.ink/when-the-world-was-young/
     type: ebook

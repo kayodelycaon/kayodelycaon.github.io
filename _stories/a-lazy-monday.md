@@ -1,6 +1,7 @@
 ---
 title: A Lazy Monday
 date: 2020-11-10
+adult: true
 series: Conor and Donovan
 series_order: 3
 where_to_find:

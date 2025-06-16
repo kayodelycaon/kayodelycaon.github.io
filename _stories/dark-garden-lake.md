@@ -1,13 +1,14 @@
 ---
 title: Dark Garden Lake
 date: 2019-12-01
+adult: false
 anthology:
   title: The Reclamation Project Year One
   cover: /images/book_covers/wtwwy.png
   where_to_find:
     - name: FurPlanet
       url: https://furplanet.com/shop/item.aspx?itemid=1081
-      type: paperbook
+      type: book
     - name: BadDogBooks
       url: https://baddogbooks.com/product/reclamation-project-year-one/
       type: ebook
@@ -24,5 +25,13 @@ where_to_find:
   - name: The Voice of Dog Podcast (Part 2)
     url: https://thevoice.dog/?episode=dark-garden-lake-by-kayode-lycaon-part-2-of-2
     type: audio
+  - name: FurPlanet
+    url: https://furplanet.com/shop/item.aspx?itemid=1081
+    type: book
+  - name: BadDogBooks
+    url: https://baddogbooks.com/product/reclamation-project-year-one/
+    type: ebook
+featured:
+  A bittersweet story about Moshi, a cyborg painted wolf, created by the Reclamation Project, who is given the mission to kill the furred folk terrorist, Landolf.
 ---
-Dark Garden Lake is a bittersweet story about Moshi, a cyborg painted dog, created by the Reclamation Project, who is given the mission to kill the furred folk terrorist, Landolf. He is terribly lonely as he plays a political long game that requires him to take actions that weigh on his soul. He finds comfort in the unlikely arms of a hyena prostitute hired by his handler.
+Dark Garden Lake is a bittersweet story about Moshi, a cyborg painted wolf, created by the Reclamation Project, who is given the mission to kill the furred folk terrorist, Landolf. He is terribly lonely as he plays a political long game that requires him to take actions that weigh on his soul. He finds comfort in the unlikely arms of a hyena prostitute hired by his handler.
