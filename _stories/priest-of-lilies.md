@@ -2,16 +2,7 @@
 title: Priest of Lilies
 date: 2013-07-01
 adult: true
-anthology:
-  title: When The World Was Young
-  cover: /images/book_covers/wtwwy.png
-  where_to_find:
-    - name:  Furry Historical Fiction Society
-      url: https://fhfs.ink/when-the-world-was-young/
-      type: book
-    - name: Furry Historical Fiction Society
-      url: https://fhfs.ink/when-the-world-was-young/
-      type: ebook
+anthology: /books/when-the-world-was-young
 where_to_find:
   # - name: SoFurry
   #   url:

@@ -1,16 +1,7 @@
 ---
 title:
 date:
-anthology:
-  title:
-  cover: /images/book_covers/.png
-  where_to_find:
-    - name:
-      url:
-      type: book
-    - name:
-      url:
-      type: ebook
+anthology: /book/filename_without_extension
 where_to_find:
   - name: SoFurry
     url:

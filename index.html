@@ -13,6 +13,7 @@ nav_id: home
   </p>
 </div>
 <div class="home-section social-media" class="arrow">
+  <hr/>
   <h2>Social Media</h2>
   <p>
   Kayodé can also be found on
@@ -22,6 +23,7 @@ nav_id: home
   </p>
 </div>
 <div class="home-section">
+  <hr/>
   <h2>Featured Books</h2>
   <div class="book-list">
     {%- for book in site.books -%}
@@ -34,6 +36,7 @@ nav_id: home
   </div>
 </div>
 <div class="home-section">
+  <hr/>
   <h2>Featured Stories</h2>
   <div class="featured-stories">
     {%- for story_title in site.data.featured_stories -%}
@@ -56,17 +59,26 @@ nav_id: home
             </li>
           {%- endfor -%}
         </ul>
-        {%- assign links = story.anthology.where_to_find | where_exp: "item", "item.type contains 'book'" -%}
-        {%- if links -%}
-          <h4 class="anthology-title">In: {{story.anthology.title}} </h4>
-          <img src="{{ story.anthology.cover }}" alt="{{ story.anthology.title | escape }}" height="60" class="anthology-cover" style="float: right" />
-          <ul class="story-links anthology-links">
-            {%- for link in links -%}
-              <li>
-                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
-              </li>
-            {%- endfor -%}
-          </ul>
+        {%- if story.anthology -%}
+          {%- assign anthology = site.books | where: 'id', story.anthology | first -%}
+          {%- assign links = anthology.where_to_find -%}
+          {%- if links[0] -%}
+            <div class="anthology">
+              <div class="anthology-cover">
+                <img src="{{ anthology.cover }}" alt="{{ anthology.title | escape }}" class="anthology-cover"/>
+              </div>
+              <div class="anthology-info">
+                <h4 class="anthology-title">{{anthology.title}}</h4>
+                <ul class="story-links anthology-links">
+                  {%- for link in links -%}
+                    <li>
+                      <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          {%- endif -%}
         {%- endif -%}
       </div>
     {%- endfor -%}

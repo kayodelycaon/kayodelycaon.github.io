@@ -2,19 +2,7 @@
 title: Dark Garden Lake
 date: 2019-12-01
 adult: false
-anthology:
-  title: The Reclamation Project Year One
-  cover: /images/book_covers/reclamation-project.jpg
-  where_to_find:
-    - name: FurPlanet
-      url: https://furplanet.com/shop/item.aspx?itemid=1081
-      type: book
-    - name: BadDogBooks
-      url: https://baddogbooks.com/product/reclamation-project-year-one/
-      type: ebook
-    - name: FurryBookReview
-      url: https://furrybookreview.com/the-reclamation-project-ed-john-r-robey/
-      type: review
+anthology: /books/reclamation-project-year-one
 where_to_find:
   - name: SoFurry
     url: https://thevoice.dog/?episode=dark-garden-lake-by-kayode-lycaon-part-2-of-2

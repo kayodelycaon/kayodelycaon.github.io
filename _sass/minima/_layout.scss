@@ -2,6 +2,7 @@
  * Site header
  */
 .site-header {
+  box-shadow: 0 0 1px 2px $header-color, 0 2px 4px 2px $brand-color-light;
   width: 100%;
   color: $brand-color-light;
   background-color: $header-color;
@@ -79,7 +80,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $brand-color;
+  box-shadow: 0 -1px 1px 2px $header-color, 0 -2px 4px 2px $brand-color-light;
   font-size: $tiny-font-size;
   color: $brand-color-light;
   background-color: $header-color;
@@ -92,13 +93,23 @@
     max-width: 1000px;
     margin: auto;
     overflow: auto;
-    .site-footer-left {
-      // flex: 1;
+
+    @include media-phone {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .copyright, .email {
+        display: inline;
+        margin: 0 0.5em;
+      }
     }
+
     .site-footer-left{
-      // flex: 1;
-      @include media-phone {
-        display: none;
+      .email{
+        color: $brand-color;
+        a {
+          color: $brand-color;
+        }
       }
     }
   }
@@ -115,6 +126,7 @@
 
   .tiny-quote {
     font-size: $tiny-font-size;
+
   }
 }
 
@@ -129,7 +141,7 @@
   }
 }
 .home-section {
-  border-top: #000 1px solid;
+  // border-top: #000 1px solid;
   margin-top: $spacing-unit * 1.3;
   h2 {
     margin-top: 0;
@@ -138,6 +150,11 @@
     text-transform: uppercase;
     font-size: 1em;
     letter-spacing: 0.05em;
+    text-shadow: 1px 1px $brand-color-light;
+  }
+  hr {
+    border-top: 2px solid $text-color;
+    box-shadow: 1px 1px 1px $brand-color-light;
   }
   &.social-media {
     .social-media-link {
@@ -180,15 +197,44 @@
       font-size: 1.2em;
       font-weight: bold;
       margin-bottom: 0.5em;
+      a {
+        color: $text-color;
+      }
     }
     .story-excerpt {
       font-size: $small-font-size;
+    }
+    .anthology {
+      overflow: hidden;
+    }
+    .anthology-info {
+    }
+    .anthology-title {
+      margin: 0;
+    }
+    .anthology-cover {
+      float: left;
+      width: 4em;
+      padding-top: 0.1em;
+      padding-right: 1em;
+      flex-basis: 4em;
+    }
+    .anthology-cover img{
+      width: 100%;
+      height: auto;
+    }
+    .anthology-links {
     }
   }
   ul.story-links {
     font-size: $small-font-size;
     list-style: none;
     margin-left: 0;
+    li a {
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
   h4 {
     color: $brand-color;
@@ -214,6 +260,9 @@ i.where-to-find {
   }
   &.ebook {
     @include fa-icon-solid($fa-var-tablet-screen-button);
+  }
+  &.review {
+    @include fa-icon-solid($fa-var-star);
   }
 }
 
@@ -265,6 +314,15 @@ i.where-to-find {
     h3{
       margin-bottom: 0;
     }
+  }
+}
+
+.rss-subscribe {
+  font-size: $small-font-size;
+  color: $grey-color;
+  float: right;
+  a {
+    text-decoration: none;
   }
 }
 

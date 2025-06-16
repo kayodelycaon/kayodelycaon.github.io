@@ -2,16 +2,7 @@
 title: A Perfectly Normal Day
 date: 2023-12-01
 adult: false
-anthology:
-  title: In the Light of Dawn
-  cover: /images/book_covers/itlotd.png
-  where_to_find:
-    - name:  Furry Historical Fiction Society
-      url: https://fhfs.ink/when-the-world-was-young/
-      type: book
-    - name: Furry Historical Fiction Society
-      url: https://fhfs.ink/when-the-world-was-young/
-      type: ebook
+anthology: /books/in-the-light-of-dawn
 # where_to_find:
 #   - name: SoFurry
 #     url:

@@ -12,6 +12,6 @@ where_to_find:
     url: https://thevoice.dog/?episode=date-night-by-kayode-lycaon
     type: audio
 featured:
-  The first story I wrote a series of stories featuring a Conor, a bipolar wolf, and his snow leopard husband Donovan.
+  The first story I wrote in a series of stories featuring a Conor, a bipolar wolf, and his snow leopard husband Donovan.
 ---
 Donovan's long hours have been pushing off his Tuesday date night with Conor all week. When he gets home on Friday, he finds a freshly cleaned apartment and Conor cooking in the kitchen.

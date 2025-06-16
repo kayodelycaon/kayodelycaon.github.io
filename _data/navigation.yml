@@ -12,6 +12,6 @@
 - title: About
   page: pages/about.md
   id: about
-# - title: Styling
-#   page: pages/styling.md
-#   id: styling
+- title: Styling
+  page: pages/styling.md
+  id: styling

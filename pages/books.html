@@ -11,7 +11,9 @@ nav_id: books
         {{ book.title | escape }}
       </a>
     </h3>
-
+    <h4 class="book-meta">
+      {{ book.story}}
+    </h4>
     {{ book.content }}
   </div>
 {%- endfor -%}

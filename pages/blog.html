@@ -4,7 +4,9 @@ title: Blog
 permalink: /blog/
 nav_id: blog
 ---
-
+<div class="rss-subscribe">
+  <a href="{{ "/feed.xml" }}">RSS <i class="fa-solid fa-rss"></i></a>
+</div>
 <div class="post-list-container">
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
@@ -22,19 +24,6 @@ nav_id: blog
       </li>
       {%- endfor -%}
     </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
 </div>
-<aside class="sidebar">
-  <h2>Categories</h2>
-  <ul class="category-list">
-    {%- for category in site.categories -%}
-      <li>
-        <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">{{ category[0] }}</a>
-        <span class="category-count">({{ category[1].size }})</span>
-      </li>
-    {%- endfor -%}
-  </ul>
-</aside>

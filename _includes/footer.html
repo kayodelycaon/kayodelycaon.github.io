@@ -1,6 +1,12 @@
 <footer class="site-footer">
   <div class="site-footer-inner">
-    <span class="site-footer-left">© {{ site.time | date: "%Y" }} Kayodé Lycaon</span>
+    <div class="site-footer-left">
+      <div class="copyright">© {{ site.time | date: "%Y" }} Kayodé Lycaon</div>
+      <div class="email">
+        <i class="fa-solid fa-envelope"></i>
+        <a class="icon" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+    </div>
     <blockquote class="site-footer-right tiny-quote">
       I've gone overboard. I've got a minotaur in a speedo and succubi.
       <cite>Writing group, Seattle 2013</cite>

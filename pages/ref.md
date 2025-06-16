@@ -10,5 +10,7 @@ Kayode is from the Early Modern period (1500 – 1750). He grew up on the savann
 <a href="/ref.png"><img src="/ref.png"></a>
 
 ## Adult / NSFW Color Reference
-
 <a href="/ref-nsfw.png"><img src="/ref-nsfw-blurred.png"></a>
+
+## Equipment Reference
+<a href="/ref-equipment.png"><img src="/ref-equipment.png"></a>
