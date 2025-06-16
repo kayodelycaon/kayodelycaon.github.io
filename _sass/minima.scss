@@ -44,6 +44,7 @@ $grey-color-dark:  #666 !default;
 $grey-color-light: #ddd !default;
 
 $phone-width: 600px !default;
+$tablet-width: 900px !default;
 
 // Use media queries like this:
 // @include media-phone {
@@ -57,10 +58,19 @@ $phone-width: 600px !default;
     @content;
   }
 }
+@mixin media-tablet {
+  @media screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
 
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
+
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
 
 // Import partials.
 @import

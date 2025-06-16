@@ -22,7 +22,7 @@ nav_id: home
   </p>
 </div>
 <div class="home-section">
-  <h2>Books</h2>
+  <h2>Featured Books</h2>
   <div class="book-list">
     {%- for book in site.books -%}
       <div class="book-entry">
@@ -39,13 +39,35 @@ nav_id: home
     {%- for story_title in site.data.featured_stories -%}
       <div class="featured-story">
         {%- assign story = site.stories | where: "title", story_title | first -%}
-        <h3><a href="{{ story.url }}">{{ story.title | escape }}</a></h3>
-        <p>{{ story.content }}</p>
+        <h3 class="story-title {% if story.adult %}adult{%- endif %}">
+          <a href="{{ story.url }}">{{ story.title | escape }}</a>
+        </h3>
+        <div class="story-excerpt">
+          {%- if story.featured -%}
+            {{ story.featured | markdownify}}
+          {%- else -%}
+            {{story.content}}
+          {%- endif -%}
+        </div>
         <ul class="story-links">
           {%- for link in story.where_to_find -%}
-            <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="arrow">{{ link.name }}</a></li>
+            <li>
+              <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+            </li>
           {%- endfor -%}
         </ul>
+        {%- assign links = story.anthology.where_to_find | where_exp: "item", "item.type contains 'book'" -%}
+        {%- if links -%}
+          <h4 class="anthology-title">In: {{story.anthology.title}} </h4>
+          <img src="{{ story.anthology.cover }}" alt="{{ story.anthology.title | escape }}" height="60" class="anthology-cover" style="float: right" />
+          <ul class="story-links anthology-links">
+            {%- for link in links -%}
+              <li>
+                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
       </div>
     {%- endfor -%}
   </div>

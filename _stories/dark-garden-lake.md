@@ -4,7 +4,7 @@ date: 2019-12-01
 adult: false
 anthology:
   title: The Reclamation Project Year One
-  cover: /images/book_covers/wtwwy.png
+  cover: /images/book_covers/reclamation-project.jpg
   where_to_find:
     - name: FurPlanet
       url: https://furplanet.com/shop/item.aspx?itemid=1081
@@ -25,12 +25,6 @@ where_to_find:
   - name: The Voice of Dog Podcast (Part 2)
     url: https://thevoice.dog/?episode=dark-garden-lake-by-kayode-lycaon-part-2-of-2
     type: audio
-  - name: FurPlanet
-    url: https://furplanet.com/shop/item.aspx?itemid=1081
-    type: book
-  - name: BadDogBooks
-    url: https://baddogbooks.com/product/reclamation-project-year-one/
-    type: ebook
 featured:
   A bittersweet story about Moshi, a cyborg painted wolf, created by the Reclamation Project, who is given the mission to kill the furred folk terrorist, Landolf.
 ---
