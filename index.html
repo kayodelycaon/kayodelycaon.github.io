@@ -39,9 +39,9 @@ nav_id: home
   <hr/>
   <h2>Featured Stories</h2>
   <div class="featured-stories">
-    {%- for story_title in site.data.featured_stories -%}
+    {%- for story_id in site.data.featured_stories -%}
       <div class="featured-story">
-        {%- assign story = site.stories | where: "title", story_title | first -%}
+        {%- assign story = site.stories | where: "id", story_id | first -%}
         <h3 class="story-title {% if story.adult %}adult{%- endif %}">
           <a href="{{ story.url }}">{{ story.title | escape }}</a>
         </h3>
@@ -59,26 +59,24 @@ nav_id: home
             </li>
           {%- endfor -%}
         </ul>
-        {%- if story.anthology -%}
-          {%- assign anthology = site.books | where: 'id', story.anthology | first -%}
-          {%- assign links = anthology.where_to_find -%}
-          {%- if links[0] -%}
-            <div class="anthology">
-              <div class="anthology-cover">
-                <img src="{{ anthology.cover }}" alt="{{ anthology.title | escape }}" class="anthology-cover"/>
-              </div>
-              <div class="anthology-info">
-                <h4 class="anthology-title">{{anthology.title}}</h4>
-                <ul class="story-links anthology-links">
-                  {%- for link in links -%}
-                    <li>
-                      <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
+        {%- assign anthology = site.books | where: 'id', story.anthology | first -%}
+        {%- assign links = anthology.where_to_find -%}
+        {%- if story.anthology and links[0] -%}
+          <div class="anthology">
+            <div class="anthology-cover">
+              <img src="{{ anthology.cover }}" alt="{{ anthology.title | escape }}" class="anthology-cover"/>
             </div>
-          {%- endif -%}
+            <div class="anthology-info">
+              <h4 class="anthology-title">{{anthology.title}}</h4>
+              <ul class="story-links anthology-links">
+                {%- for link in links -%}
+                  <li>
+                    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
         {%- endif -%}
       </div>
     {%- endfor -%}

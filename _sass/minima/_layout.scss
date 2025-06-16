@@ -160,7 +160,6 @@
     .social-media-link {
       &:not(:last-child):after {
         content: ", ";
-
       }
       &:last-child:before {
         content: " and ";
@@ -178,25 +177,21 @@
     }
   }
   .featured-stories {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    gap: $spacing-unit;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     @include media-tablet {
-      display: block;
+      grid-template-columns: 1fr;
     }
   }
   .featured-story {
-    flex: 1 1 0;
-    &:not(:last-child) {
-      margin-right: $spacing-unit / 2;
-      @include media-tablet {
-        margin-right: 0;
-        margin-bottom: $spacing-unit;
-      }
-    }
+    overflow-x: hidden;
+    text-overflow: ellipsis;
     h3 {
       font-size: 1.2em;
       font-weight: bold;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.2em;
+      overflow: hidden;
       a {
         color: $text-color;
       }
@@ -205,25 +200,20 @@
       font-size: $small-font-size;
     }
     .anthology {
-      overflow: hidden;
-    }
-    .anthology-info {
+      display: grid;
+      grid-template-columns: 4em minmax(0, 1fr);
+      gap: 0.5em;
     }
     .anthology-title {
       margin: 0;
+      white-space: nowrap;
     }
     .anthology-cover {
-      float: left;
-      width: 4em;
       padding-top: 0.1em;
-      padding-right: 1em;
-      flex-basis: 4em;
     }
     .anthology-cover img{
       width: 100%;
       height: auto;
-    }
-    .anthology-links {
     }
   }
   ul.story-links {
@@ -231,18 +221,19 @@
     list-style: none;
     margin-left: 0;
     li a {
-      overflow-x: hidden;
-      text-overflow: ellipsis;
       white-space: nowrap;
     }
   }
   h4 {
     color: $brand-color;
     font-size: $small-font-size;
-    font-weight: bold;
+    font-weight: 500;
     font-style: italic;
     margin-top: 0.5em;
     margin-bottom: 0.3em;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 

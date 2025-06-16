@@ -13,6 +13,4 @@ where_to_find:
     url: https://fhfs.ink/when-the-world-was-young/
     type: ebook
 ---
-> The sun is rising from the ocean swells into a blue horizon streaked with wispy clouds and a warm, salty wind ruffles though my ear tufts. Before me, the city of Portus Agrillae Rubrae sprawls out from red hills, gently sloping towards a stone-walled harbor. A sea of red tiles glowing in the sunrise.
->
-> It’s going to be a beautiful day.
+The sun rises over Portus Agrillae Rubrae and it's a beautiful day. Marti lazily imagines being master of the world. But the omens turn ominous and it's time to visit the temple of Ithou.

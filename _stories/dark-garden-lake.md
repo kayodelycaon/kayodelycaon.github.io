@@ -7,10 +7,10 @@ where_to_find:
   - name: SoFurry
     url: https://thevoice.dog/?episode=dark-garden-lake-by-kayode-lycaon-part-2-of-2
     type: website
-  - name: The Voice of Dog Podcast (Part 1)
+  - name: The Voice of Dog Podcast (Pt 1)
     url: https://thevoice.dog/?episode=dark-garden-lake-by-kayode-lycaon-part-1
     type: audio
-  - name: The Voice of Dog Podcast (Part 2)
+  - name: The Voice of Dog Podcast (Pt 2)
     url: https://thevoice.dog/?episode=dark-garden-lake-by-kayode-lycaon-part-2-of-2
     type: audio
 featured:
