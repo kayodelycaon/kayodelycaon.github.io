@@ -26,8 +26,8 @@ Special:
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  16px !default;
-$tiny-font-size:  14px !default;
+$small-font-size:  0.88em !default;
+$tiny-font-size:   0.77em !default;
 $base-line-height: 1.5 !default;
 
 $content-width:    68.9%!default;
@@ -37,35 +37,30 @@ $brand-color-light: #d5ae7c !default;
 $text-color:       #000 !default;
 $background-color: #fcf1ee !default;
 $brand-color:      #836330 !default;
+$brand-color-dark: #5c3f1f !default;
 $header-color:     #000 !default;
 
 $grey-color:       #a1796a !default;
 $grey-color-dark:  #666 !default;
 $grey-color-light: #ddd !default;
 
+$phone-font-size:  20px !default;
 $phone-width: 600px !default;
 $tablet-width: 900px !default;
 
-// Use media queries like this:
-// @include media-phone {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
+// This breakpoint is used to increase font sizes and spacing to make it
+// easier to read text and tap links on a phone.
 @mixin media-phone {
   @media screen and (max-width: $phone-width) {
     @content;
   }
 }
+// This breakpoint is used to collapse grid layouts into a single column
+// so lines of text are a comfortable width for reading.
 @mixin media-tablet {
   @media screen and (max-width: $tablet-width) {
     @content;
   }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
 }
 
 @import
@@ -81,4 +76,5 @@ $tablet-width: 900px !default;
   'site/header.scss',
   'site/footer.scss',
   'pages/home',
-  'pages/books';
+  'pages/books',
+  'pages/stories';

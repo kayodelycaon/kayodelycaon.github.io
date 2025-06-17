@@ -5,7 +5,7 @@ nav_id: books
 ---
 <div class="books-list">
 {%- for book in site.books -%}
-  <div class="book">
+  <div class="book" id="{{ book.id | slugify }}">
     <div class="book-cover">
       <img src="{{ book.cover }}"/>
     </div>

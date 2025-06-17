@@ -11,6 +11,10 @@
     }
   }
 
+  @include media-phone{
+    margin-bottom: $spacing-unit;
+  }
+
   .site-title {
     box-sizing: border-box;
     max-width: 1000px;
@@ -21,6 +25,7 @@
       font-size: 30px;
       font-weight: bold;
       line-height: 36px;
+      text-shadow: none;
     }
     h2{
       margin: 0;
@@ -28,6 +33,7 @@
       font-size: 16px;
       font-weight: normal;
       font-style: italic;
+      text-shadow: none;
     }
 
     .social-media {
@@ -66,6 +72,11 @@
       &:hover {
         color: #000;
         background-color: $brand-color-light;
+        box-shadow: 0 2px 6px 0 $brand-color-light;
+        text-shadow: none;
+      }
+      @include media-phone {
+        font-size: 20px;
       }
     }
   }

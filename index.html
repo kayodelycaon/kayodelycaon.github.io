@@ -28,7 +28,7 @@ nav_id: home
   <div class="book-list">
     {%- for book in site.books -%}
       <div class="book-entry">
-        <a class="post-link" href="{{ book.url | relative_url }}">
+        <a class="post-link" href="{% link pages/books.html %}#{{ book.id | slugify }}">
           <img src="{{ book.cover }}" alt="{{ book.title | escape }}" />
         </a>
       </div>
@@ -43,7 +43,7 @@ nav_id: home
       <div class="featured-story">
         {%- assign story = site.stories | where: "id", story_id | first -%}
         <h3 class="story-title {% if story.adult %}adult{%- endif %}">
-          <a href="{{ story.url }}">{{ story.title | escape }}</a>
+          {{ story.title | escape }}
         </h3>
         <div class="story-excerpt">
           {%- if story.featured -%}

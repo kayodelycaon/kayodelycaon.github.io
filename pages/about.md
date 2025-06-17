@@ -10,8 +10,8 @@ Kayode Lycaon (Kay·o·dee Lie·kay·on) is a gregarious painted wolf living in 
 He writes stories filled with hope and hardship. The ending may be joyful, bittersweet, or tragic but it will always bring the rich inner lives of his anthropomorphic characters to life on the page. He hopes that his passion and creativity will inspire others to tell their own stories.
 
 <h3> Reference Sheet
-<span style="font-size: 16px">
-<a href="{% link pages/ref.md %}">Full Sheet</a> →
+<span class="no-shadow font-size-small">
+<a href="{% link pages/ref.md %}" class="arrow">Full Sheet</a>
 </span>
 </h3>
 <a href="/ref.png"><img src="/ref.png"></a>

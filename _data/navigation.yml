@@ -8,10 +8,8 @@
   page: pages/books.html
   id: books
 - title: Stories
-  page: pages/stories.md
+  page: pages/stories.html
+  id: stories
 - title: About
   page: pages/about.md
   id: about
-- title: Styling
-  page: pages/styling.md
-  id: styling

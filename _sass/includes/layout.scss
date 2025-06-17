@@ -1,33 +1,39 @@
-@import 'site/header.scss';
-@import 'site/footer.scss';
-@import 'pages/home';
-@import 'pages/books';
-
 ul.where-to-find {
   font-size: $small-font-size;
   list-style: none;
   margin-left: 0;
+
+  @include media-phone {
+    font-size: 1.5em;
+  }
 }
-ul.where-to-find li i {
-  width: 1.5em;
-  li a {
+ul.where-to-find li {
+  @include media-phone {
+    margin: 0.4em 0;
+  }
+}
+ul.where-to-find li {
+  a {
     white-space: nowrap;
   }
-  @include fa-icon-regular($fa-var-link);
-  &.website {
-    @include fa-icon-solid($fa-var-globe);
-  }
-  &.audio {
-    @include fa-icon-solid($fa-var-headphones);
-  }
-  &.book {
-    @include fa-icon-solid($fa-var-book);
-  }
-  &.ebook {
-    @include fa-icon-solid($fa-var-tablet-screen-button);
-  }
-  &.review {
-    @include fa-icon-solid($fa-var-star);
+  i {
+    width: 1.5em;
+    @include fa-icon-regular($fa-var-link);
+    &.website {
+      @include fa-icon-solid($fa-var-globe);
+    }
+    &.audio {
+      @include fa-icon-solid($fa-var-headphones);
+    }
+    &.book {
+      @include fa-icon-solid($fa-var-book);
+    }
+    &.ebook {
+      @include fa-icon-solid($fa-var-tablet-screen-button);
+    }
+    &.review {
+      @include fa-icon-solid($fa-var-star);
+    }
   }
 }
 
@@ -66,8 +72,11 @@ ul.where-to-find li i {
 }
 
 .post-list-container {
-  max-width:  $content-width;
+  max-width: $content-width;
   margin: 0 auto;
+  @include media-tablet {
+    max-width: 100%;
+  }
 }
 
 .post-list {
@@ -77,6 +86,9 @@ ul.where-to-find li i {
   > li {
     margin-bottom: $spacing-unit;
     h3{
+      a {
+        color: $text-color;
+      }
       margin-bottom: 0;
     }
   }
@@ -92,12 +104,27 @@ ul.where-to-find li i {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  text-shadow: 1px 1px $brand-color-light;
   &.adult:after {
     content: "[18+]";
     color: $brand-color;
     font-size: 0.6em;
     vertical-align: super;
   }
+}
+
+.font-size-base {
+  font-size: $base-font-size;
+}
+.font-size-small {
+  font-size: $small-font-size;
+}
+.font-size-tiny {
+  font-size: $tiny-font-size;
+}
+
+.no-shadow {
+  text-shadow: none;
 }
 
 p.author {

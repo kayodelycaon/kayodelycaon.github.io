@@ -3,8 +3,12 @@
     display: grid;
     grid-template-columns: 8em 1fr;
     gap: $spacing-unit;
-    .book-cover {
-      padding-top: 0.3em;
+
+    @include media-tablet {
+      grid-template-columns: 1fr;
+    }
+    .book-cover{
+      margin-top: 0.4em;
     }
     .book-details {
       .book-title {
@@ -26,6 +30,8 @@
       margin-bottom: $spacing-unit;
       border-bottom: 1px solid $brand-color;
     }
-
+    &:target {
+      background-color: #e1e7fc;
+    }
   }
 }

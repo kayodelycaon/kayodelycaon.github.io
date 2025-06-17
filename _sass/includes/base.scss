@@ -13,6 +13,9 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  @include media-phone {
+    font-size: $phone-font-size;
+  }
 }
 
 body > main {
@@ -30,6 +33,12 @@ body > main {
 body > main > article {
   max-width: $content-width;
   margin: 0 auto;
+  @include media-tablet {
+    max-width: 90%;
+  }
+  @include media-phone {
+    max-width: 100%;
+  }
 }
 
 body > main {
@@ -161,7 +170,7 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  font-size: 0.9em;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
