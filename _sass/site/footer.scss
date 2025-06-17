@@ -1,0 +1,53 @@
+/**
+ * Site footer
+ */
+.site-footer {
+  box-shadow: 0 -1px 1px 2px $header-color, 0 -2px 4px 2px $brand-color-light;
+  font-size: $tiny-font-size;
+  color: $brand-color-light;
+  background-color: $header-color;
+  padding: $spacing-unit 1.6%;
+
+  .site-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+
+    @include media-phone {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .copyright, .email {
+        display: inline;
+        margin: 0 0.5em;
+      }
+    }
+
+    .site-footer-left{
+      .email{
+        color: $brand-color;
+        a {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $brand-color-light;
+  }
+  blockquote{
+    cite{
+      font-size: $tiny-font-size;
+      color: $grey-color-dark;
+    }
+  }
+
+  .tiny-quote {
+    font-size: $tiny-font-size;
+
+  }
+}

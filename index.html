@@ -1,0 +1,86 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+nav_id: home
+override_id: home
+title: Home
+---
+<div class="home-header">
+  <p><img src="/images/avatar-transparent-512.png" height="150" width="150" style="float: left"/>
+  Kayode Lycaon (Kay·o·dee Lie·kay·on) is a gregarious painted wolf living in the questionable habitat of southwestern Ohio. By day, he pretends to be a human, writing software. At night, his paws weave stories from threads spun from the fertile grounds of his imagination.
+  <a href="{%- link pages/about.md -%}" class="arrow">Full Bio</a>
+  <a href="{%- link pages/ref.md -%}" class="arrow">Ref Sheet</a>
+  </p>
+</div>
+<div class="home-section social-media" class="arrow">
+  <hr/>
+  <h2>Social Media</h2>
+  <p>
+  Kayodé can also be found on
+  {% for social in site.data.social_media -%}
+  <span class="social-media-link"><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.title }}</a></span>
+  {%- endfor -%}
+  </p>
+</div>
+<div class="home-section">
+  <hr/>
+  <h2>Featured Books</h2>
+  <div class="book-list">
+    {%- for book in site.books -%}
+      <div class="book-entry">
+        <a class="post-link" href="{% link pages/books.html %}#{{ book.id | slugify }}">
+          <img src="{{ book.cover }}" alt="{{ book.title | escape }}" />
+        </a>
+      </div>
+    {%- endfor  -%}
+  </div>
+</div>
+<div class="home-section">
+  <hr/>
+  <h2>Featured Stories</h2>
+  <div class="featured-stories story-list">
+    {%- for story_id in site.data.featured_stories -%}
+      <div class="story">
+        {%- assign story = site.stories | where: "id", story_id | first -%}
+        <h3 class="story-title {% if story.adult %}adult{%- endif %}">
+          {{ story.title | escape }}
+        </h3>
+        <div class="story-excerpt">
+          {%- if story.featured -%}
+            {{ story.featured | markdownify}}
+          {%- else -%}
+            {{story.content}}
+          {%- endif -%}
+        </div>
+        <ul class="story-links where-to-find">
+          {%- for link in story.where_to_find -%}
+            <li>
+              <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+        {%- assign anthology = site.books | where: 'id', story.anthology | first -%}
+        {%- assign links = anthology.where_to_find -%}
+        {%- if story.anthology and links[0] -%}
+          <div class="anthology">
+            <div class="anthology-cover">
+              <img src="{{ anthology.cover }}" alt="{{ anthology.title | escape }}" class="anthology-cover"/>
+            </div>
+            <div class="anthology-info">
+              <h4 class="anthology-title">{{anthology.title}}</h4>
+              <ul class="story-links anthology-links where-to-find">
+                {%- for link in links -%}
+                  <li>
+                    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

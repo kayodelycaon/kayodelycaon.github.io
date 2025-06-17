@@ -1,0 +1,48 @@
+---
+title: Stories
+permalink: /stories/
+nav_id: stories
+---
+<div class="story-index-list story-list">
+  {%- for story in site.stories -%}
+    <div class="story">
+      <h3 class="story-title {% if story.adult %}adult{%- endif %}">
+        {{ story.title | escape }}
+      </h3>
+      <div class="story-excerpt">
+        {%- if story.featured -%}
+          {{ story.featured | markdownify }}
+        {%- else -%}
+          {{ story.content }}
+        {%- endif -%}
+      </div>
+      {%- if story.where_to_find[0] -%}
+        <ul class="story-links where-to-find">
+          {%- for link in story.where_to_find -%}
+            <li>
+              <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+      {%- assign anthology = site.books | where: 'id', story.anthology | first -%}
+      {%- assign anthology_links = anthology.where_to_find -%}
+      {%- if story.anthology and anthology_links[0] -%}
+        <div class="anthology">
+          <div class="anthology-cover">
+            <img src="{{ anthology.cover }}" alt="{{ anthology.title | escape }}" class="anthology-cover"/>
+          </div>
+          <div class="anthology-info">
+            <h4 class="anthology-title">{{ anthology.title }}</h4>
+            <ul class="story-links anthology-links where-to-find">
+              {%- for link in anthology_links -%}
+                <li>
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="where-to-find {{link.type}}"></i>{{ link.name }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endfor -%}

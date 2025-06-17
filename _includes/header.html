@@ -1,0 +1,22 @@
+<header class="site-header" role="banner">
+  <div class="site-title">
+    <ul class="social-media">
+      {%- for social in site.data.social_media -%}
+        <li>
+          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ social.icon | relative_url }}" alt="{{ social.title | escape }} icon" />
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+    <h1><a rel="author" href="/">{{ site.title | escape }}</a></h1>
+    <h2>{{ site.subtitle | escape }}</h2>
+  </div>
+  <img class="site-banner" src="/images/header.jpg"/>
+  <nav class="site-nav">
+    {%- for path in site.data.navigation -%}
+      {%- assign target = site.pages | where: "path", path.page | first -%}
+      <a class="site-nav-link {% if page.nav_id == path.id %}active{% endif %}" href="{{ target.url | relative_url }}">{{ path.title | escape }}</a>
+    {%- endfor -%}
+  </nav>
+</header>

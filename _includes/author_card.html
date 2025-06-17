@@ -1,0 +1,12 @@
+{%- assign author = site.data.authors[include.author] -%}
+<div class="author-card">
+  <div class="author-avatar">
+    <figure>
+      <img src="{{ author.avatar }}" alt="{{ author.name | escape }}" class="author-avatar" />
+    </figure>
+  </div>
+  <div class="author-description">
+    <h3 class="author-name">About {{ author.name }}</h3>
+    <div class="author-bio">{{ author.bio | markdownify }}</div>
+  </div>
+</div>

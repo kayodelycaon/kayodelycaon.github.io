@@ -1,0 +1,15 @@
+- title: Home
+  page: index.html
+  id: home
+- title: Blog
+  page: pages/blog.html
+  id: blog
+- title: Books
+  page: pages/books.html
+  id: books
+- title: Stories
+  page: pages/stories.html
+  id: stories
+- title: About
+  page: pages/about.md
+  id: about
