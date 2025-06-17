@@ -7,8 +7,10 @@ Often when I’m in the middle of a story, macOS’s built in dictation will sto
 
 In Terminal.app run the following command:
 
-```
-killall -9 DictationIM com.apple.SpeechRecognitionCore.speechrecognitiond com.apple.SpeechRecognitionCore.brokerd
-```
+{% highlight shell %}
+killall -9 DictationIM \
+  com.apple.SpeechRecognitionCore.speechrecognitiond \
+  com.apple.SpeechRecognitionCore.brokerd
+{% endhighlight %}
 
 This will restart the process that handles dictation and it should start working again when you use the keyboard shortcut. I use the default: Press Fn (Function) Key Twice.

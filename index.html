@@ -4,6 +4,8 @@
 
 layout: home
 nav_id: home
+override_id: home
+title: Home
 ---
 <div class="home-header">
   <p><img src="/images/avatar-transparent-512.png" height="150" width="150" style="float: left"/>
@@ -38,9 +40,9 @@ nav_id: home
 <div class="home-section">
   <hr/>
   <h2>Featured Stories</h2>
-  <div class="featured-stories">
+  <div class="featured-stories story-list">
     {%- for story_id in site.data.featured_stories -%}
-      <div class="featured-story">
+      <div class="story">
         {%- assign story = site.stories | where: "id", story_id | first -%}
         <h3 class="story-title {% if story.adult %}adult{%- endif %}">
           {{ story.title | escape }}

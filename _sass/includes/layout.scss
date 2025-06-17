@@ -1,10 +1,84 @@
+.story-list {
+  display: grid;
+  gap: $spacing-unit;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  @include media-tablet {
+    grid-template-columns: 1fr;
+  }
+  .story {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .story-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+    }
+    .story-excerpt {
+      font-size: $small-font-size;
+    }
+    .anthology {
+      display: grid;
+      grid-template-columns: 4em minmax(0, 1fr);
+      gap: 0.5em;
+      @include media-phone {
+        // grid-template-columns: 1fr;
+      }
+    }
+    .anthology-title {
+      margin: 0;
+      white-space: nowrap;
+    }
+    ul.story-links li{
+      a {
+        display: inline-block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+      }
+    }
+    .story-links.no-links {
+      font-size: $small-font-size;
+      color: $brand-color;
+      font-style: italic;
+      p {
+        margin-bottom: 0.5em;
+      }
+    }
+    .anthology-cover {
+      padding-top: 0.1em;
+      img {
+        @include media-phone {
+          // width: 25%;
+        }
+      }
+    }
+  }
+  h4 {
+    color: $brand-color;
+    font-size: $small-font-size;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @include media-phone {
+      font-size: 1.2em;
+    }
+  }
+}
+
+
 ul.where-to-find {
   font-size: $small-font-size;
   list-style: none;
   margin-left: 0;
 
   @include media-phone {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 ul.where-to-find li {
@@ -44,6 +118,12 @@ ul.where-to-find li {
   margin-bottom: $spacing-unit / 2;
 }
 
+.post-footer {
+  margin-: $spacing-unit;
+  padding-top: $spacing-unit;
+  border-top: 1px solid $text-color;
+}
+
 .post-title {
   font-weight: bold;
   line-height: 1;
@@ -51,7 +131,10 @@ ul.where-to-find li {
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit / 2;
+  & > p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .post-meta {
@@ -100,6 +183,23 @@ ul.where-to-find li {
   float: right;
   a {
     text-decoration: none;
+  }
+}
+
+.author-card {
+  display: grid;
+  grid-template-columns: 4em minmax(0, 1fr);
+  gap: 1em;
+
+  .author-name {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-shadow: none;
+  }
+  .author-bio {
+    font-size: $small-font-size;
+    color: $brand-color;
   }
 }
 

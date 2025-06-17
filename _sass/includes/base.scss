@@ -33,6 +33,12 @@ body > main {
 body > main > article {
   max-width: $content-width;
   margin: 0 auto;
+  & > footer {
+    margin-top: $spacing-unit;
+    border-top: 1px solid $brand-color;
+    padding-top: $spacing-unit;
+
+  }
   @include media-tablet {
     max-width: 90%;
   }
